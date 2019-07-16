@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Great Walks NZ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Bootstraop CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- AJax -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="StylingSheet/StylingSheet.css">
+    <!-- User Css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--font-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infromation about the Great Walks in NZ">
+    <meta name="keywords" content="Great Walks, Walks NZ, Walks">
+    <meta name="author" content="Pankaj Ghodla">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar --->
+    <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg navbar-expand-md sticky-top ">
+        <div class="container-fluid">
+            <!-- Navbar content -->
+            <a class="navbar-brand" href="javascript:void(0);">
+                <img class="logo" src="Images/Logo.png" alt="logo">
+                <!--logo-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+
+                <!--non-collapsible nav bar--->
+                <ul class="navbar-nav flexRowReverseNav">
+                    <li class="">
+                        <a class="nav-link effect-underline" href="ContactUs.html"> Contact Us</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link effect-underline" href="Gallery.html">Gallery</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <!--dropdown-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Walks
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item effect-underline" href="keplerTrack.html">Kepler Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Routeburn.html">Routeburn Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Milford.html">Milford Track</a>
+                            <!--navigation links-->
+                        </div>
+                    </li>
+                    <li class="activelink">
+                        <a class="nav-link" href="javascript:void(0);">Home</a>
+                        <!--navigation links-->
+                    </li>
+
+                </ul>
+                <!--collapsible nav bar--->
+                <ul class="navbar-nav NavSM">
+                    <li class="nav-item activelink">
+                        <a class="nav-link" href="javascript:void(0);">Home</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <!--dropdown-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Walks
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item effect-underline" href="keplerTrack.html">Kepler Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Routeburn.html">Routeburn Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Milford.html">Milford Track</a>
+                            <!--navigation links-->
+                        </div>
+                    </li>
+                    <li class="">
+                        <a class="nav-link effect-underline" href="Gallery.html">Gallery</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="">
+                        <a class="nav-link effect-underline" href="ContactUs.html"> Contact Us</a>
+                        <!--navigation links-->
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!--- End of Navigation ---->
+    <!--- SlideShow --->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!--First sideshow image-->
+                <img class="d-block w-100 cover" src="Images/KeplerTrackSlideshow.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kepler Track</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Second sideshow image-->
+                <img class="d-block w-100 cover" src="Images/RouteburnTrackSlideshow.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Routeburn Track</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Third sideshow image-->
+                <img class="d-block w-100 cover" src="Images/MilfordTrackSlideshow.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Milford Track</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            <!--prevoius button-->
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            <!--next button-->
+        </a>
+    </div>
+    <!-- End of SlideShow -->
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <section class="firstSectionIndex">
+                <h1>NZ Great Walks</h1>
+                <!--heading-->
+                <hr>
+                <p>
+                    Take a walk, a Great Walk, through some of New Zealand’s most awe-inspiring landscapes.
+                    <br> New Zealand's nine Great Walks are premier tracks that pass through diverse and spectacular scenery. From native forests, lakes and rivers to rugged mountain peaks, deep gorges and vast valleys...there's a Great Walk for everyone!
+                    <br> Great Walks tracks are well formed and easy to follow. While most people prefer to explore on their own terms, guided trips offer a bit more comfort. Great Walks are accessible from major towns that are well serviced by local operators and accommodation and transport providers.</p>
+            </section>
+
+            <!-- Start of the second section --->
+            <section class="container-fluid secondSectionIndex">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 col-xl-5 gridImgIndex">
+
+                            <img class="cover textBlockImage gridImgIndex" src="Images/HomeGridImage1.jpg" alt="mountain valley">
+                            <!--image-->
+                        </div>
+                        <div class="col-lg-6 col-md -6 col-12 col-xl-7 gridImgIndex">
+                            <!--side text-->
+                            <h2 class="text-center gridheadingIndex">Walker information</h2>
+                            <hr>
+
+                            <p class="gridParaIndex">
+                                New Zealand’s sparse population and huge wilderness areas mean that most walking tracks are remote from many of the comforts of civilisation. Facilities at the 900 huts maintained by DOC are basic, and walkers need to equip themselves with adequate food and clothing.</p>
+
+                            <p class="gridParaIndex">Weather conditions can change rapidly, especially in the mountains, and it is essential, even in summer, to carry warm, waterproof clothing. No hike should be undertaken without consulting a detailed guide book and a map.</p>
+
+                            <p class="gridParaIndex">For any of the 'Great Walks', a pass is required for accommodation in huts, but permits or admission fees are not required for day walking. Passes are issued by the Department of Conservation.
+                            </p>
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+                <div class="container-fluid sectionTwoGrid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="cover textBlockImage textBlockImageTwo " src="Images/HomeGridImage2.jpg" alt="Loose rope Bridge">
+                            <!--image-->
+                            <div class="textBlockTwo">
+                                <h2 class="text-center">South Island Great Walks</h2>
+                                <hr>
+                                <ul>
+                                    <li>Tongariro Northern Circuit</li>
+                                    <li>Lake Waikaremoana Track</li>
+                                    <li>Whanganui Journey</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <img class="cover textBlockImage textBlockImageTwo" src="Images/HomeGridImage3.jpg" alt="sea with mountains">
+                            <!--image-->
+                            <div class="textBlockTwo">
+                                <!--text-->
+                                <h2 class="text-center">North Island Great Walks</h2>
+                                <hr>
+                                <ul>
+                                    <li>Tongariro Northern Circuit</li>
+                                    <li>Lake Waikaremoana Track</li>
+                                    <li>Whanganui Journey</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <!--footer -->
+    <footer class="bg-dark">
+        <div class="container-fluid footerContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <!--footer content-->
+                        <h6>&copy; All Copyright Reserved</h6></div>
+                    <div class="col-md-6 col-sm-12 footerContent">
+                        <h6>Designed by Pankaj Ghodla</h6></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

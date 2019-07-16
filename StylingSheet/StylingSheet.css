@@ -1,0 +1,447 @@
+/*Global Style*/
+
+body {
+    /* Sets the background colour and font size.*/
+    background-color: rgba(84, 186, 67, 0.25);
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif !important; /*sets the font for the whole webiste*/
+}
+
+footer {
+    /*Style for footer*/
+    color: white;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+}
+
+.footerContent {
+    /*align the text in the footer to right and gives it a padding*/
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: right;
+}
+
+.rowUser {
+    /*modified the bootstrap row class by removing the padding */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /*Sets navbar width to 100 percent */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(113, 113, 114);
+    width: 100%;
+}
+
+.navbar-nav {
+    /*Sets the width of the navigation link to 100 percent */
+    width: 100%;
+}
+
+#navbarNavDropdown {
+    /*Sets min width for dropdown */
+    min-height: 70px;
+    width: 100%;
+}
+
+.nav-link {
+    /*Style for navigation links */
+    height: 67px;
+    /* height of the navigation hyperlink */
+    text-align: center;
+    padding-top: 25px;
+    color: white !important;
+    /*color of the navigation hyperlink*/
+}
+
+nav a {
+    /*removes the text decoration of navigation hyperlink*/
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a.effect-underline:after {
+    /*Gives the underline effect for the navigation hyperlink*/
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 4px solid;
+    /*underline */
+    margin-top: 28px;
+    opacity: 0;
+    /*hidden until mouse hover*/
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+a.effect-underline:hover:after {
+    /* Sets the mouse hovering style to activate the underline animation */
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.dropdown-menu {
+    /*Sets the dropdown menu background */
+    background-color: rgb(52, 58, 64);
+    /*background color of dropdown*/
+    text-align: center;
+}
+
+.dropdown-item {
+    /*Sets the color of the dropdown hyperlink and background color*/
+    color: white !important;
+    /*dropdown hyperlink color*/
+    background-color: rgb(52, 58, 64);
+    /*dropdown hyperlink background color*/
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.dropdown-item:hover {
+    /*Sets the background color when the mouse hovers the navigation hyperlink*/
+    background-color: rgb(52, 58, 64);
+}
+
+nav a:hover {
+    /*changes the color of the hyperlink when mouse hover*/
+    color: rgb(174, 215, 142) !important;
+}
+
+.activelink {
+    /*Sets the permanent bottom border for active nav link*/
+    border-bottom: 4px solid rgb(174, 215, 142);
+    color: rgb(174, 215, 142) !important;
+}
+
+.container-fluid {
+    /*Sets the max width of the container*/
+    max-width: 1600px;
+}
+
+.logo {
+    /*Sets the width and height of the Logo*/
+    width: 250px;
+    height: 65px;
+}
+
+img.rounded {
+    /*Sets border radius for the images */
+    border-radius: 10px 5px !important;
+}
+
+h1,
+h2 {
+    /*Sets the color of the h1 and h2*/
+    color: rgb(86, 150, 54);
+}
+
+hr {
+    /*Style the hr*/
+    width: 80%;
+    /*Sets the width of the hr*/
+    border-top: 3px solid rgb(86, 150, 54);
+    /*sets the border with and color*/
+    border-radius: 10px;
+}
+
+
+/*SlideShow*/
+
+.carousel-item {
+    /*Sets the dimension for the slideshow*/
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item img {
+    /*Sets the dimension for the slideshow images*/
+    width: 100%;
+    height: 400px;
+}
+
+.cover {
+    /*sets the image as cover image*/
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+/*Index page Style*/
+
+.firstSectionIndex {
+    /*Sets the width of the first Section on Index page to 80 percent*/
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.secondSectionIndex {
+    /*Sets the margin for the second section on Index page*/
+    margin: 10px 0px;
+}
+
+.gridParaIndex {
+    /*Sets the padding for the paragraph in the grip section on Index page*/
+    padding-top: 6px;
+    margin: 0px;
+}
+
+.gridheadingIndex {
+    /*Sets the padding for the heading on index page*/
+    padding-top: 10px;
+}
+
+.gridImgIndex {
+    /*Sets the width to 100 percent for the Images in grip on Index page*/
+    margin: auto !important;
+    width: 100% !important;
+}
+
+
+/*Kepler Style*/
+
+.sectionOneKapler {
+    /*Sets the mail image on the kaplers track*/
+    background: url("../Images/MainImageKepler.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: -5px -10px 0px rgba(120, 190, 68, 0.05) inset;
+    height: 500px;
+}
+
+
+/*Routeburn Style*/
+
+.sectionOneRouteburn {
+    /*Sets the mail image on the Routeburn track*/
+    background: url("../Images/MainImageRouteburn.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: -5px -10px 0px rgba(120, 190, 68, 0.05) inset;
+    height: 500px;
+}
+
+
+/*Milford Style*/
+
+.sectionOneMilford {
+    /*Sets the mail image on the Milford track*/
+    background: url("../Images/MainImageMilford.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: -5px -10px 0px rgba(120, 190, 68, 0.05) inset;
+    height: 500px;
+}
+
+
+/*Gallery Style*/
+
+.gallery-block.grid-gallery {
+    /*Sets padding for the Images of different Tracks*/
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.gallery-block.grid-gallery .heading {
+    /*Sets margin for the heading */
+    margin-bottom: 50px;
+}
+
+.gallery-block.grid-gallery a:hover {
+    /*decreases the opacity of the images when mouse hovers*/
+    opacity: 0.8;
+}
+
+.gallery-block.grid-gallery .item img {
+    /*Sets the shadow for the image*/
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+.item img {
+    /*Sets the height of the images on gallery page*/
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.gallery-block.grid-gallery .item {
+    /*Sets the margin between the images*/
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    /*Sets different Style for samller devices*/
+    .gallery-block.grid-gallery .scale-on-hover:hover {
+        /*decreases the animation time for smaller devies*/
+        transform: scale(1.05);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+
+/*Contact Us*/
+label {
+    font-weight: bold;
+}
+
+form {
+    /*Sets the bottom margin for the form*/
+    margin-bottom: 20px;
+}
+
+.headingContactUs {
+    /*Sets the margin top for heading on Contact Us page*/
+    margin-top: 20px;
+}
+
+li .hyperlinkContactUs:hover {
+    /*removes the text decoration of the list */
+    text-decoration: none;
+}
+
+.ContentContactUs {
+    /*align the text center*/
+    text-align: center;
+}
+
+.contactlist {
+    /*removes the list style*/
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
+/*Common Style for Walks */
+
+.sectionTwoGrid {
+    /*Sets the margin for the second section in all the walks pages*/
+    margin-top: 16px;
+}
+
+.textBlockImage {
+    /*Sets the width and border radius for all the text block*/
+    width: 90%;
+    border-radius: 5px;
+    margin: auto !important;
+}
+
+.textBlockImageTwo {
+    /*Sets the max width for the Images in text block */
+    max-width: 550px;
+}
+
+.textBlock {
+    /*Sets the text block style for all 3 walks, the text over the main image*/
+    position: absolute;
+    /*sets the position absolute*/
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    /*Sets the background translucent*/
+    color: white;
+    padding-left: 20px;
+    /*sets padding*/
+    padding-right: 20px;
+}
+
+.textBlockTwo {
+    /*Sets the style for the text that hover over the image in all 3 walsk and index page*/
+    position: relative;
+    top: -10%;
+    /*moves it over the image*/
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.85);
+    /*Sets the background translucent*/
+    color: white;
+    width: 90%;
+    max-width: 550px;
+    /*sets max width*/
+    padding: 20px;
+    border-radius: 30px 2px;
+}
+
+iframe {
+    /*Sets margin for iframe map*/
+    margin-bottom: -7px;
+}
+
+
+/*medium devies*/
+
+@media (max-width: 991.98px) {
+    .logo {
+        /*decrease the logo size for medium devices*/
+        width: 200px;
+        height: 55px;
+    }
+    .firstSectionIndex {
+        /*increase the size of the first sextion on index page for medium devices*/
+        width: 95%;
+    }
+    body {
+        /*decreases the size of the font for medium devices*/
+        font-size: 17px;
+    }
+}
+
+
+/*small devies*/
+
+@media (max-width: 767.98px) {
+    body {
+        /*decreases the size of the font for smaller devices*/
+        font-size: 16px;
+    }
+    .footerContent {
+        /*Aligns the footer content for smaller devices*/
+        text-align: center;
+    }
+    footer {
+        /*align footer to center*/
+        text-align: center;
+    }
+    .flexRowReverseNav {
+        /*hides the big navigation bar*/
+        display: none;
+    }
+}
+
+
+/*devices bigger than smaller devies*/
+
+@media (min-width: 767.98px) {
+    .flexRowReverseNav {
+        /*Reverse the direction of fex for the navigation link, so that the it start for right end*/
+        flex-direction: row-reverse !important;
+    }
+    .NavSM {
+        /*hides the collapsible nav bar*/
+        display: none;
+    }
+    nav ul li {
+        /* sets the margin for the link in nav*/
+        margin-left: 20px;
+    }
+}

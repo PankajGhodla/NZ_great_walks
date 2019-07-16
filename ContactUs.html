@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Great Walks NZ</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Bootstraop CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- AJax -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="StylingSheet/StylingSheet.css">
+    <!-- User Css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--font-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infromation about the Great Walks in NZ">
+    <meta name="keywords" content="Great Walks, Walks NZ, Walks">
+    <meta name="author" content="Pankaj Ghodla">
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <!-- Navigation Bar --->
+    <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg navbar-expand-md sticky-top ">
+        <div class="container-fluid">
+            <!-- Navbar content -->
+            <a class="navbar-brand" href="javascript:void(0);">
+                <img class="logo" src="Images/Logo.png" alt="Logo">
+                <!--logo-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!--collapsible navbar button-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!--non-collapsible nav bar--->
+                <ul class="navbar-nav flexRowReverseNav">
+                    <li class="activelink">
+                        <a class="nav-link" href="javascript:void(0);"> Contact Us</a>
+                        <!--navigation link-->
+                    </li>
+                    <li>
+                        <a class="nav-link effect-underline" href="Gallery.html">Gallery</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <!--dropdown-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Walks
+										</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item effect-underline" href="keplerTrack.html">Kepler Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Routeburn.html">Routeburn Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Milford.html">Milford Track</a>
+                            <!--navigation links-->
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link effect-underline" href="Index.html"> Home</a>
+                        <!--navigation links-->
+                    </li>
+
+                </ul>
+                <!--collapsible nav bar--->
+                <ul class="navbar-nav NavSM">
+                    <li class="nav-items">
+                        <a class="nav-link" href="Index.html"> Home</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <!--dropdown-->
+                        <a class="nav-link dropdown-toggle effect-underline" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Walks
+										</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item effect-underline" href="keplerTrack.html">Kepler Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Routeburn.html">Routeburn Track</a>
+                            <!--navigation links-->
+                            <a class="dropdown-item effect-underline" href="Milford.html">Milford Track</a>
+                            <!--navigation links-->
+                        </div>
+                    </li>
+                    <li class="">
+                        <a class="nav-link effect-underline" href="Gallery.html">Gallery</a>
+                        <!--navigation links-->
+                    </li>
+                    <li class="activelink">
+                        <a class="nav-link" href="javascript:void(0);"> Contact Us</a>
+                        <!--navigation links-->
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--- End of Navigation ---->
+
+    </nav>
+    <div class="container-fluid ContentContactUs">
+        <!--Contact Us information-->
+        <h1 class="headingContactUs">Contact Us</h1>
+        <ul class="contactlist">
+
+            <div>
+                <li>Phone Number: <a href="tel://0800694732" class="hyperlinkContactUs">(0800) 694 732</a></li>
+            </div>
+            <div>
+                <li>Email: <a href="mailto:greatwalks@doc.govt.nz" class="hyperlinkContactUs">greatwalks@doc.govt.nz</a> </li>
+            </div>
+            <br>
+        </ul>
+
+        <h1>Feedback Form</h1>
+        <p>If you have a sugeestion or any feedback for us, we'd love to hear it! </p>
+
+    </div>
+    <br>
+
+    <!--form -->
+    <div class="container-fluid">
+        <form class="needs-validation" action="Submit.html" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                    <!--input-->
+                    <div class="valid-feedback">
+                        <!--validation-->
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        <!--validation-->
+                        Please provide your First name.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                    <!--input-->
+                    <div class="valid-feedback">
+                        <!--validation-->
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        <!--validation-->
+                        Please provide your Last name.
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustomEmail">Email</label>
+                    <input type="Email" class="form-control" id="validationCustomEmail" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                    <!--input-->
+                    <div class="valid-feedback">
+                        <!--validation-->
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        <!--validation-->
+                        Please provide a valid Email address.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Reason</h2>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Complaint
+                            <!--option 1 input-->
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Feedback about the website
+                            <!--option 2 input-->
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                        <label class="form-check-label" for="exampleRadios3">
+                            Others
+                            <!--option 3 input-->
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-8">
+                    <label for="exampleFormControlTextarea1">Feedback</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" required></textarea>
+                    <!--input-->
+                    <div class="valid-feedback">
+                        <!--validation-->
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        <!--validation-->
+                        Please give us feedback.
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--footer-->
+    <footer class="bg-dark">
+        <div class="container-fluid footerContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h6>&copy; All Copyright Reserved</h6></div>
+                    <!--footer content-->
+                    <div class="col-md-6 col-sm-12 footerContent">
+                        <h6>Designed by Pankaj Ghodla</h6></div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
